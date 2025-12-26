@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Register from "./Register";
+import Register from "./components/Register";
 import "./App.css";
 
 export default function App() {
