@@ -82,7 +82,7 @@ export default function Register() {
         {/* Gender */}
         <div className="form-group">
           <label>Gender</label>
-          <div className="option-group">
+          <div>
             {genders.map((g) => (
               <label key={g.value} className="option-label">
                 <input
@@ -101,7 +101,7 @@ export default function Register() {
         {/* Hobbies */}
         <div className="form-group">
           <label>Hobbies</label>
-          <div className="option-group">
+          <div>
             {hobbyOptions.map((h) => (
               <label key={h.value} className="option-label">
                 <input
@@ -135,25 +135,25 @@ export default function Register() {
 
       {/* Live Preview Below */}
       <div className="display-data">
-        <div className="data-row">
+        <div>
           <span className="data-label">Username:</span>
           <span className="data-value">{username || "-"}</span>
         </div>
-        <div className="data-row">
+        <div>
           <span className="data-label">Firstname:</span>
           <span className="data-value">{firstname || "-"}</span>
         </div>
-        <div className="data-row">
+        <div>
           <span className="data-label">Lastname:</span>
           <span className="data-value">{lastname || "-"}</span>
         </div>
-        <div className="data-row">
+        <div>
           <span className="data-label">Gender:</span>
           <span className="data-value">
             {genders.find((g) => g.value === gender)?.label || "-"}
           </span>
         </div>
-        <div className="data-row">
+        <div>
           <span className="data-label">Hobbies:</span>
           <span className="data-value">
             {hobbies.length > 0
@@ -164,7 +164,7 @@ export default function Register() {
               : "-"}
           </span>
         </div>
-        <div className="data-row">
+        <div>
           <span className="data-label">Role:</span>
           <span className="data-value">
             {roles.find((r) => r.value === role)?.label || "-"}
